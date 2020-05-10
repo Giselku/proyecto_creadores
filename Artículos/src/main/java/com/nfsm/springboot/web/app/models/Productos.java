@@ -8,7 +8,19 @@ public class Productos {
 	public String cantidad;
 	public String proveedor;
 
+	public Productos(String nombre, String descripcion, String precio, String marca, String cantidad,
+			String proveedor) {
+		super();
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.precio = precio;
+		this.marca = marca;
+		this.cantidad = cantidad;
+		this.proveedor = proveedor;
+	}
 
+	public Productos() {
+	}
 
 	public String getNombre() {
 		return nombre;

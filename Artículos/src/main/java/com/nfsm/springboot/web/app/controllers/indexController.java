@@ -1,4 +1,4 @@
-package com.nfsm.springboot.web.app.controllers;
+ package com.nfsm.springboot.web.app.controllers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,8 +25,8 @@ public class indexController {
 		
 		Productos productos=new Productos();
 		
-		producto.add(new Productos("Zucaritas", "Hojuelas de maíz con azúcar adicionadas con complejo B, hierro y zinc.", "$46.90", "Kellogg’s ", "460 g.", "Kellogg’s"));
-		producto.add(new Productos("Pan blanco", "Actileche es una fórmula desarrollada por Bimbo y el Instituto Nacional de Nutrición Salvador Zubirán. Contiene leche, que aporta calcio, vitaminas (D, A, B1, B2), niacina, ácido fólico y minerales (hierro, calcio, zinc, yodo y fósforo), importantes para el desarrollo y crecimiento infantil.", "$29.50", "Bimbo", "640 g.", "Bimbo"));
+		producto.add(new Productos("Zucaritas", "Hojuelas de maï¿½z con azï¿½car adicionadas con complejo B, hierro y zinc.", "$46.90", "Kelloggï¿½s ", "460 g.", "Kelloggï¿½s"));
+		producto.add(new Productos("Pan blanco", "Actileche es una fï¿½rmula desarrollada por Bimbo y el Instituto Nacional de Nutriciï¿½n Salvador Zubirï¿½n. Contiene leche, que aporta calcio, vitaminas (D, A, B1, B2), niacina, ï¿½cido fï¿½lico y minerales (hierro, calcio, zinc, yodo y fï¿½sforo), importantes para el desarrollo y crecimiento infantil.", "$29.50", "Bimbo", "640 g.", "Bimbo"));
 		
 		return "listar";
 	}
