@@ -25,6 +25,9 @@ public class indexController {
 		
 		Productos productos=new Productos();
 		
+		producto.add(new Productos("Zucaritas", "Hojuelas de maíz con azúcar adicionadas con complejo B, hierro y zinc.", "$46.90", "Kellogg’s ", "460 g.", "Kellogg’s"));
+		producto.add(new Productos("Pan blanco", "Actileche es una fórmula desarrollada por Bimbo y el Instituto Nacional de Nutrición Salvador Zubirán. Contiene leche, que aporta calcio, vitaminas (D, A, B1, B2), niacina, ácido fólico y minerales (hierro, calcio, zinc, yodo y fósforo), importantes para el desarrollo y crecimiento infantil.", "$29.50", "Bimbo", "640 g.", "Bimbo"));
+		
 		return "listar";
 	}
 	
