@@ -19,42 +19,42 @@ public class indexController {
 	
 	@RequestMapping ("/listar")
 	public String listar(Model model) {
-		List<Productos> producto=new ArrayList<>();
+		List<Productos> productos=new ArrayList<Productos>();
 		model.addAttribute("titulo", "Lista de productos"); 
-		model.addAttribute("productos", producto);
+		model.addAttribute("productos", productos);
 		
-		Productos productos=new Productos();
 		
-		producto.add(new Productos("Zucaritas", 
-						"Hojuelas de maíz con azúcar adicionadas con complejo B, hierro y zinc.",
+		
+		productos.add(new Productos("Zucaritas", 
+						"Hojuelas de maiz con azucar adicionadas con complejo B, hierro y zinc.",
 						"$46.90", 
-						"Kellogg’s ", 
+						"Kellogg's ", 
 						"460 g.", 
-						"Kellogg’s"));
+						"Kellogg's"));
 		
-		producto.add(new Productos("Pan blanco",
-				"Actileche es una fórmula desarrollada por Bimbo y el Instituto Nacional de Nutrición Salvador Zubirán. Contiene leche, que aporta calcio, vitaminas (D, A, B1, B2), niacina, ácido fólico y minerales (hierro, calcio, zinc, yodo y fósforo), importantes para el desarrollo y crecimiento infantil.",
+		productos.add(new Productos("Pan blanco",
+				"Actileche es una formula desarrollada por Bimbo y el Instituto Nacional de NutriciÃ²n Salvador ZubirÃ n. Contiene leche, que aporta calcio, vitaminas (D, A, B1, B2), niacina, Ã cido fÃ²lico y minerales (hierro, calcio, zinc, yodo y fÃ²sforo), importantes para el desarrollo y crecimiento infantil.",
 				"$29.50", 
 				"Bimbo", 
 				"640 g.", 
 				"Bimbo"));
 		
-		producto.add(new Productos("Cheetos Poff",
-				"Botana Cheetos® Poffs® es una deliciosa opción hecha de cereal de maíz con el sabor a queso que tanto te gusta. Conoce su sabor y consiente a tu paladar desde el primer bocado.",
+		productos.add(new Productos("Cheetos Poff",
+				"Botana Cheetos Poffs es una deliciosa opciÃ²n hecha de cereal de maÃ¬z con el sabor a queso que tanto te gusta. Conoce su sabor y consiente a tu paladar desde el primer bocado.",
 				"$25.00", 
 				"Sabritas", 
 				"100 g.", 
 				"Sabritas"));
 		
-		producto.add(new Productos("Leche clásica",
-				"La leche Alpura Clásica es fundamental en tu despensa ya que contiene proteína propia de la leche que te da la energía para comenzar tu día y que ayuda al desarrollo de músculos. Además de ser una fuente de calcio que ayuda a el crecimiento de dientes definitivos en los niños y da fortaleza ósea en adolescentes y adultos.",
+		productos.add(new Productos("Leche clÃ sica",
+				"La leche Alpura ClÃ sica es fundamental en tu despensa ya que contiene proteÃ¬na propia de la leche que te da la energÃ¬a para comenzar tu dÃ¬a y que ayuda al desarrollo de mÃ¹sculos. AdemÃ s de ser una fuente de calcio que ayuda a el crecimiento de dientes definitivos en los niÃ±os y da fortaleza Ã²sea en adolescentes y adultos.",
 				"$20.50", 
 				"Alpura", 
 				"1 L.", 
 				"Alpura"));
 		
-		producto.add(new Productos("Galleta oreo",
-				"Disfruta el crujiente sabor de las galletas dulces Oreo, galleta tipo sándwich sabor a chocolate con un rico y cremoso relleno sabor a vainilla. Disfruta de este bocadillo a cualquier hora del día, como sugerencia puedes acompañar con un vaso de leche fría o incluso con tu bebida caliente preferida.",
+		productos.add(new Productos("Galleta oreo",
+				"Disfruta el crujiente sabor de las galletas dulces Oreo, galleta tipo sÃ ndwich sabor a chocolate con un rico y cremoso relleno sabor a vainilla. Disfruta de este bocadillo a cualquier hora del dÃ¬a, como sugerencia puedes acompaÃ±ar con un vaso de leche frÃ¬a o incluso con tu bebida caliente preferida.",
 				"$14.00", 
 				"Oreo",
 				"114 g.", 
